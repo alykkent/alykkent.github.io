@@ -1,0 +1,10 @@
+baseURL = "https://alykkent.com/"
+languageCode = "en-us"
+title = "Aly K Kent"
+copyright = "© Aly K Kent 2021"
+theme = "alykkent"
+
+[params]
+  heroPhoto = "aly2.jpg"
+  twitter = "alyk966"
+  linkedIn = "aly-k-kent"
