@@ -1,8 +1,10 @@
 {{ define "main" }}
-<header class="masthead">
+<header class="masthead" style="height:auto;">
   <div class="container d-flex h-100 align-items-center">
     <div class="mx-auto text-center">
-      <a href="#about"><img class="img-fluid" src="/img/{{ .Site.Params.heroPhoto }}" /></a>
+      <div class="embed-responsive embed-responsive-21by9">
+        <a href="#about"><img src="/img/{{ .Site.Params.heroPhoto }}" /></a>
+      </div>
       <p>
         <a href="https://twitter.com/{{ .Site.Params.Twitter }}">
           <i class="fab fa-twitter"></i>
