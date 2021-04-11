@@ -6,11 +6,9 @@
 <section class="about-section text-center" style="background:white" id="about">
   <div class="container">
     <div>
-      {{ range .Data.Pages }}
-        {{ if eq .Type "about" }}
-          {{ .Content }}
-        {{ end }}
-      {{ end}}
+      {{ with .Site.GetPage "page" "about" }}
+        {{ .Content }}
+      {{ end }}
     </div>
   </div>
 </section>
