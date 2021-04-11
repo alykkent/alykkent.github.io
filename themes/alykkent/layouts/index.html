@@ -1,25 +1,11 @@
 {{ define "main" }}
-<header class="masthead" style="height:auto;">
-  <div class="container d-flex h-100 align-items-center">
-    <div class="mx-auto text-center">
-      <div class="embed-responsive embed-responsive-21by9">
-        <a href="#about"><img src="/img/{{ .Site.Params.heroPhoto }}" /></a>
-      </div>
-      <p>
-        <a href="https://twitter.com/{{ .Site.Params.Twitter }}">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://linkedin.com/{{ .Site.Params.LinkedIn }}">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </p>
-    </div>
-  </div>
-</header>
+<div class="container-fluid">
+  <img style="width:100%;" class="img-responsive" src="/img/{{ .Site.Params.heroPhoto }}" />
+</div>
 
-<section class="about-section text-center" id="about">
+<section class="about-section text-center" style="background:white" id="about">
   <div class="container">
-    <div class="text-white-50">
+    <div>
       {{ range .Data.Pages }}
         {{ if eq .Type "about" }}
           {{ .Content }}
