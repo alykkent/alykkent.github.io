@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Aly K Kent"
 copyright = "© Aly K Kent 2021"
 theme = "alykkent"
+googleAnalytics = "G-74P1ME387N"
 
 [params]
   heroPhoto = "jumbo.jpg"
